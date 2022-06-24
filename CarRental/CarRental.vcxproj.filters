@@ -37,7 +37,7 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Client.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Administrator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +54,7 @@
       <Filter>Administrator</Filter>
     </ClInclude>
     <ClInclude Include="Client.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Administrator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

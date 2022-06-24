@@ -7,7 +7,7 @@ public:
 	ProfileClient();
 
 	ProfileClient(const std::string& loginClient, std::string& passwordClient, std::string& emailClient);
-private:
+//private:
 	std::string loginClient;
 	std::string passwordClient;
 	std::string emailClient;
