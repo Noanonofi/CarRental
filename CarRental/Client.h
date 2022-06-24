@@ -10,6 +10,8 @@ public:
 	void printPatronymic() const;
 	void printPhoneNumber() const;
 	void printPasportData() const;
+	void printLogin() const;
+	void printEmail() const;
 private:
 	ContactInformationClient contactInfoClient;
 	ProfileClient profileClient;

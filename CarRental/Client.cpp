@@ -24,3 +24,13 @@ void Client::printPasportData() const
 {
 	std::cout << "Passport Data Client: " << contactInfoClient.getPasportDataClient();
 }
+//=========================
+void Client::printLogin() const
+{
+	std::cout << "Login Clint: " << profileClient.getLogin();
+}
+
+void Client::printEmail() const
+{
+	std::cout << "Email Clint: " << profileClient.getEmail();
+}

@@ -6,3 +6,13 @@ ProfileClient::ProfileClient(const std::string& loginClient, std::string& passwo
 	:loginClient{loginClient},
 	passwordClient{passwordClient},
 	emailClient{emailClient} {}
+
+std::string ProfileClient::getLogin() const
+{
+	return loginClient;
+}
+
+std::string ProfileClient::getEmail() const
+{
+	return emailClient;
+}

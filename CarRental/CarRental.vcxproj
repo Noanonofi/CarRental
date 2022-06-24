@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Administrator.cpp" />
+    <ClCompile Include="CheckingCorrectnessData.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ContactInformationClient.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Administrator.h" />
+    <ClInclude Include="CheckingCorrectnessData.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="ContactInformationClient.h" />
     <ClInclude Include="CreateUser.h" />
