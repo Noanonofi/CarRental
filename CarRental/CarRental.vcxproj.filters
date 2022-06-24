@@ -22,6 +22,9 @@
     <Filter Include="CheckingInfo">
       <UniqueIdentifier>{4fd208e4-1491-4233-9ab9-73a7a5d88d30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Interfase">
+      <UniqueIdentifier>{f0d796f4-644b-466d-863e-9282a71ce6e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Administrator.cpp">
@@ -45,6 +48,12 @@
     <ClCompile Include="CheckingCorrectnessData.cpp">
       <Filter>CheckingInfo</Filter>
     </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Interfase</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSettings.cpp">
+      <Filter>Interfase</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Administrator.h">
@@ -64,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="CheckingCorrectnessData.h">
       <Filter>CheckingInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Interfase</Filter>
+    </ClInclude>
+    <ClInclude Include="UserSettings.h">
+      <Filter>Interfase</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

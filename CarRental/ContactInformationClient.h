@@ -15,6 +15,12 @@ public:
 
 	);
 
+	void setName(const std::string& name);
+	void setSurmame(const std::string& surmame);
+	void setPatronymic(const std::string& patronymic);
+	void setPhoneNumber(const unsigned int& phoneNumber);
+	void setPasportData(const unsigned int& pasportData);
+
 	std::string getName() const;
 	std::string getSurmame() const;
 	std::string getPatronymic() const;

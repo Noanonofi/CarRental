@@ -7,6 +7,21 @@ ProfileClient::ProfileClient(const std::string& loginClient, std::string& passwo
 	passwordClient{passwordClient},
 	emailClient{emailClient} {}
 
+void ProfileClient::setLogin(const std::string& login)
+{
+	loginClient = login;
+}
+
+void ProfileClient::setPassword(const std::string& password)
+{
+	passwordClient = password;
+}
+
+void ProfileClient::setEmail(const std::string& email)
+{
+	emailClient = email;
+}
+
 std::string ProfileClient::getLogin() const
 {
 	return loginClient;
