@@ -2,7 +2,7 @@
 #include "CreateUser.h"
 class Administrator
 {
-private:
+public:
 	CreateUser createUser;
 };
 

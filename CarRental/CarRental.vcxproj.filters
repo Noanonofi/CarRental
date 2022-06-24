@@ -24,19 +24,37 @@
     <ClCompile Include="Administrator.cpp">
       <Filter>Administrator</Filter>
     </ClCompile>
-    <ClCompile Include="CarRental.cpp">
+    <ClCompile Include="ProfileClient.cpp">
+      <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactInformationClient.cpp">
       <Filter>Users</Filter>
     </ClCompile>
     <ClCompile Include="CreateUser.cpp">
-      <Filter>Users</Filter>
+      <Filter>Administrator</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Administrator.h">
       <Filter>Administrator</Filter>
     </ClInclude>
-    <ClInclude Include="CreateUser.h">
+    <ClInclude Include="ProfileClient.h">
       <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactInformationClient.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateUser.h">
+      <Filter>Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
