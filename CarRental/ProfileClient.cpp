@@ -8,12 +8,12 @@ ProfileClient::ProfileClient(const std::string& loginClient, std::string& passwo
 	emailClient{emailClient} {}
 
 
-std::string ProfileClient::getLogin() const
+const std::string& ProfileClient::getLogin() const
 {
 	return loginClient;
 }
 
-std::string ProfileClient::getEmail() const
+const std::string& ProfileClient::getEmail() const
 {
 	return emailClient;
 }

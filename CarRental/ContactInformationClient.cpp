@@ -16,27 +16,27 @@ ContactInformationClient::ContactInformationClient
 	phoneNumberClient{ phoneNumberClient },
 	pasportDataClient{ pasportDataClient } {}
 
-std::string ContactInformationClient::getName() const
+const std::string& ContactInformationClient::getName() const
 {
 	return nameClient;
 }
 
-std::string ContactInformationClient::getSurmame() const
+const std::string& ContactInformationClient::getSurmame() const
 {
 	return surmameClient;
 }
 
-std::string ContactInformationClient::getPatronymic() const
+const std::string& ContactInformationClient::getPatronymic() const
 {
 	return patronymicClient;
 }
 
-unsigned int ContactInformationClient::getPhoneNumberClient() const
+const unsigned int& ContactInformationClient::getPhoneNumberClient() const
 {
 	return phoneNumberClient;
 }
 
-unsigned int ContactInformationClient::getPasportDataClient() const
+const unsigned int& ContactInformationClient::getPasportDataClient() const
 {
 	return pasportDataClient;
 }

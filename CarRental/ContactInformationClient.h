@@ -18,11 +18,11 @@ public:
 
 	);
 
-	std::string getName() const;
-	std::string getSurmame() const;
-	std::string getPatronymic() const;
-	unsigned int getPhoneNumberClient() const;
-	unsigned int getPasportDataClient() const;
+	const std::string& getName() const;
+	const std::string& getSurmame() const;
+	const std::string& getPatronymic() const;
+	const unsigned int& getPhoneNumberClient() const;
+	const unsigned int& getPasportDataClient() const;
 
 public:
 	std::string nameClient;
