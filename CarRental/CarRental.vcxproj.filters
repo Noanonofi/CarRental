@@ -19,24 +19,66 @@
     <Filter Include="Administrator">
       <UniqueIdentifier>{bbd1df36-62b8-4206-9a53-60119b4ed42b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CheckingInfo">
+      <UniqueIdentifier>{4fd208e4-1491-4233-9ab9-73a7a5d88d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfase">
+      <UniqueIdentifier>{f0d796f4-644b-466d-863e-9282a71ce6e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Administrator.cpp">
       <Filter>Administrator</Filter>
     </ClCompile>
-    <ClCompile Include="CarRental.cpp">
+    <ClCompile Include="ProfileClient.cpp">
+      <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactInformationClient.cpp">
       <Filter>Users</Filter>
     </ClCompile>
     <ClCompile Include="CreateUser.cpp">
+      <Filter>Administrator</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
       <Filter>Users</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckingCorrectnessData.cpp">
+      <Filter>CheckingInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Interfase</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSettings.cpp">
+      <Filter>Interfase</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Administrator.h">
       <Filter>Administrator</Filter>
     </ClInclude>
-    <ClInclude Include="CreateUser.h">
+    <ClInclude Include="ProfileClient.h">
       <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactInformationClient.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateUser.h">
+      <Filter>Administrator</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Users</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckingCorrectnessData.h">
+      <Filter>CheckingInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Interfase</Filter>
+    </ClInclude>
+    <ClInclude Include="UserSettings.h">
+      <Filter>Interfase</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
