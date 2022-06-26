@@ -1,3 +1,5 @@
+#ifndef ProfileClient_h
+#define ProfileClient_h
 #pragma once
 #include <iostream>
 
@@ -15,4 +17,6 @@ public:
 	std::string passwordClient;
 	std::string emailClient;
 };
+#endif
+
 

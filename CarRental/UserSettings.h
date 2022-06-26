@@ -1,3 +1,5 @@
+#ifndef UserSettings_h
+#define UserSettings_h
 #pragma once
 #include "ContactInformationClient.h"
 #include "ProfileClient.h"
@@ -23,4 +25,5 @@ private:
 	ContactInformationClient contactInformationUser;
 	CheckingCorrectnessData checkingCorrectnessData;
 };
+#endif
 

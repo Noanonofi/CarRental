@@ -1,5 +1,8 @@
+#ifndef ContactInformationClient_h
+#define ContactInformationClient_h
 #pragma once
 #include <iostream>
+
 class ContactInformationClient
 {
 public:
@@ -29,3 +32,4 @@ public:
 	unsigned int pasportDataClient{};
 };
 
+#endif

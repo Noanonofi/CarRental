@@ -1,3 +1,5 @@
+#ifndef CheckingCorrectnessData_h
+#define CheckingCorrectnessData_h
 #pragma once
 #include <iostream>
 
@@ -14,4 +16,5 @@ public:
 	bool checkingCorrInputPassword(const std::string& password) const;
 	bool checkingCorrInputEmail(const std::string& email) const;
 };
+#endif
 

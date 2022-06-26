@@ -1,3 +1,5 @@
+#ifndef Client_h
+#define Client_h
 #pragma once
 #include "ContactInformationClient.h"
 #include "ProfileClient.h"
@@ -16,4 +18,4 @@ private:
 	ContactInformationClient contactInfoClient;
 	ProfileClient profileClient;
 };
-
+#endif
