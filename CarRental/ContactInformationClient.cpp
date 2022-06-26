@@ -1,6 +1,12 @@
 #include "ContactInformationClient.h"
 
-ContactInformationClient::ContactInformationClient() {}
+ContactInformationClient::ContactInformationClient() {
+	nameClient = "DefaultName";
+	surmameClient = "DefaultSurname";
+	patronymicClient = "DefaultPatronymic";
+	phoneNumberClient = 0;
+	pasportDataClient = 0;
+}
 
 ContactInformationClient::ContactInformationClient
 (

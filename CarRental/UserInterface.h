@@ -6,6 +6,7 @@
 
 class UserInterface
 {
+	void printMenu() const;
 private:
 	Client client;
 	UserSettings settings;

@@ -1,6 +1,10 @@
 #include "ProfileClient.h"
 
-ProfileClient::ProfileClient() {}
+ProfileClient::ProfileClient() {
+	loginClient = "DefaultLogin";
+	passwordClient = "DefaultPassword";
+	emailClient = "DefaultEmail";
+}
 
 ProfileClient::ProfileClient(const std::string& loginClient, std::string& passwordClient, std::string& emailClient)
 	:loginClient{loginClient},
