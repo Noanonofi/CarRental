@@ -16,31 +16,6 @@ ContactInformationClient::ContactInformationClient
 	phoneNumberClient{ phoneNumberClient },
 	pasportDataClient{ pasportDataClient } {}
 
-void ContactInformationClient::setName(const std::string& name)
-{
-	nameClient = name;
-}
-
-void ContactInformationClient::setSurmame(const std::string& surmame)
-{
-	surmameClient = surmame;
-}
-
-void ContactInformationClient::setPatronymic(const std::string& patronymic)
-{
-	patronymicClient = patronymic;
-}
-
-void ContactInformationClient::setPhoneNumber(const unsigned int& phoneNumber)
-{
-	phoneNumberClient = phoneNumber;
-}
-
-void ContactInformationClient::setPasportData(const unsigned int& pasportData)
-{
-	pasportDataClient = pasportData;
-}
-
 std::string ContactInformationClient::getName() const
 {
 	return nameClient;
