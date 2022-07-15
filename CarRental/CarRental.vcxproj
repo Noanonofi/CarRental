@@ -132,12 +132,14 @@
     <ClCompile Include="ContactClientINFO.cpp" />
     <ClCompile Include="CreateUser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProfileClientINFO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckCorrInput.h" />
     <ClInclude Include="ContactClientINFO.h" />
     <ClInclude Include="CreateUser.h" />
     <ClInclude Include="InformationUser.h" />
+    <ClInclude Include="ProfileClientINFO.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

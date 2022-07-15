@@ -32,3 +32,36 @@ bool CheckCorrInput::checkCorrInputPatronymic(const std::string& patronymic) con
 		return false;
 	}
 }
+
+bool CheckCorrInput::checkCorrInputLogin(const std::string& login) const
+{
+	uint8_t MinLoginLength = 3u;
+	if (login.length() > MinLoginLength) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+bool CheckCorrInput::checkCorrInputPassword(const std::string& password) const
+{
+	uint8_t MinPasswordLength = 8u;
+	if (password.length() > MinPasswordLength) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+bool CheckCorrInput::checkCorrInputEmail(const std::string& email) const
+{
+	uint8_t MinEmailLength = 8u;
+	if (email.length() > MinEmailLength) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}

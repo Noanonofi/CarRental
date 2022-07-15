@@ -33,6 +33,9 @@
     <ClCompile Include="CreateUser.cpp">
       <Filter>CheckInfo\User</Filter>
     </ClCompile>
+    <ClCompile Include="ProfileClientINFO.cpp">
+      <Filter>CheckInfo\User</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckCorrInput.h">
@@ -45,6 +48,9 @@
       <Filter>CheckInfo\User</Filter>
     </ClInclude>
     <ClInclude Include="InformationUser.h">
+      <Filter>CheckInfo\User</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileClientINFO.h">
       <Filter>CheckInfo\User</Filter>
     </ClInclude>
   </ItemGroup>
