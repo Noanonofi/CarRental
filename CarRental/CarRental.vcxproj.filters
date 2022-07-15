@@ -13,14 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="CheckingInfo">
+    <Filter Include="CheckInfo">
       <UniqueIdentifier>{4fd208e4-1491-4233-9ab9-73a7a5d88d30}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Interfase">
-      <UniqueIdentifier>{f0d796f4-644b-466d-863e-9282a71ce6e6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Information">
-      <UniqueIdentifier>{b0462921-1257-4c3c-8f95-fa0fd68c00a6}</UniqueIdentifier>
+    <Filter Include="CheckInfo\User">
+      <UniqueIdentifier>{4b31d404-c374-43fb-b46b-2ec85077c64f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -28,21 +25,27 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="CheckCorrInput.cpp">
-      <Filter>CheckingInfo</Filter>
+      <Filter>CheckInfo</Filter>
     </ClCompile>
     <ClCompile Include="ContactClientINFO.cpp">
-      <Filter>Information</Filter>
+      <Filter>CheckInfo\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateUser.cpp">
+      <Filter>CheckInfo\User</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckCorrInput.h">
-      <Filter>CheckingInfo</Filter>
+      <Filter>CheckInfo</Filter>
     </ClInclude>
     <ClInclude Include="ContactClientINFO.h">
-      <Filter>Information</Filter>
+      <Filter>CheckInfo\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateUser.h">
+      <Filter>CheckInfo\User</Filter>
     </ClInclude>
     <ClInclude Include="InformationUser.h">
-      <Filter>Interfase</Filter>
+      <Filter>CheckInfo\User</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
