@@ -13,71 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Users">
-      <UniqueIdentifier>{9992ef44-e1d1-4072-80e1-0671f8d77e55}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Administrator">
-      <UniqueIdentifier>{bbd1df36-62b8-4206-9a53-60119b4ed42b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="CheckingInfo">
       <UniqueIdentifier>{4fd208e4-1491-4233-9ab9-73a7a5d88d30}</UniqueIdentifier>
     </Filter>
     <Filter Include="Interfase">
       <UniqueIdentifier>{f0d796f4-644b-466d-863e-9282a71ce6e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Information">
+      <UniqueIdentifier>{b0462921-1257-4c3c-8f95-fa0fd68c00a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Administrator.cpp">
-      <Filter>Administrator</Filter>
-    </ClCompile>
-    <ClCompile Include="ProfileClient.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="ContactInformationClient.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="CreateUser.cpp">
-      <Filter>Administrator</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Client.cpp">
-      <Filter>Users</Filter>
-    </ClCompile>
-    <ClCompile Include="CheckingCorrectnessData.cpp">
+    <ClCompile Include="CheckCorrInput.cpp">
       <Filter>CheckingInfo</Filter>
     </ClCompile>
-    <ClCompile Include="UserInterface.cpp">
-      <Filter>Interfase</Filter>
-    </ClCompile>
-    <ClCompile Include="UserSettings.cpp">
-      <Filter>Interfase</Filter>
+    <ClCompile Include="ContactClientINFO.cpp">
+      <Filter>Information</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Administrator.h">
-      <Filter>Administrator</Filter>
-    </ClInclude>
-    <ClInclude Include="ProfileClient.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="ContactInformationClient.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="CreateUser.h">
-      <Filter>Administrator</Filter>
-    </ClInclude>
-    <ClInclude Include="Client.h">
-      <Filter>Users</Filter>
-    </ClInclude>
-    <ClInclude Include="CheckingCorrectnessData.h">
+    <ClInclude Include="CheckCorrInput.h">
       <Filter>CheckingInfo</Filter>
     </ClInclude>
-    <ClInclude Include="UserInterface.h">
-      <Filter>Interfase</Filter>
+    <ClInclude Include="ContactClientINFO.h">
+      <Filter>Information</Filter>
     </ClInclude>
-    <ClInclude Include="UserSettings.h">
+    <ClInclude Include="InformationUser.h">
       <Filter>Interfase</Filter>
     </ClInclude>
   </ItemGroup>

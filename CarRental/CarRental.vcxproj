@@ -127,25 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Administrator.cpp" />
-    <ClCompile Include="CheckingCorrectnessData.cpp" />
-    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="CheckCorrInput.cpp" />
+    <ClCompile Include="ContactClientINFO.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ContactInformationClient.cpp" />
-    <ClCompile Include="CreateUser.cpp" />
-    <ClCompile Include="ProfileClient.cpp" />
-    <ClCompile Include="UserInterface.cpp" />
-    <ClCompile Include="UserSettings.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Administrator.h" />
-    <ClInclude Include="CheckingCorrectnessData.h" />
-    <ClInclude Include="Client.h" />
-    <ClInclude Include="ContactInformationClient.h" />
-    <ClInclude Include="CreateUser.h" />
-    <ClInclude Include="ProfileClient.h" />
-    <ClInclude Include="UserInterface.h" />
-    <ClInclude Include="UserSettings.h" />
+    <ClInclude Include="CheckCorrInput.h" />
+    <ClInclude Include="ContactClientINFO.h" />
+    <ClInclude Include="InformationUser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
