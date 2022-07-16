@@ -1,22 +1,21 @@
 ﻿#include <iostream>
-//#include "CreateUser.h"
 #include "Authorization.h"
+#include "ProfileClientList.h"
 
 
 
 int main()
 {
 	setlocale(0, "");
-	//nlohmann::ordered_json JSON;
-	//CreateUser create;
 
-	//create.Serialization(JSON);
+	//ProfileClientList profile;
 
-	//create.Deserialization();
+	//profile.addClient("Login", "Wrongpassword", "anonofi@gmail.com");
 
-	Authorization auth;
+	//Authorization auth;
 
-	auth.RegistrartionSystem();
+	//auth.RegistrartionSystem();
+	//auth.AuthorizationSystem();
 
 }
 

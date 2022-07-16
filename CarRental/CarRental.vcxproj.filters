@@ -13,51 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="CheckInfo">
-      <UniqueIdentifier>{4fd208e4-1491-4233-9ab9-73a7a5d88d30}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CheckInfo\User">
-      <UniqueIdentifier>{4b31d404-c374-43fb-b46b-2ec85077c64f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Auth">
       <UniqueIdentifier>{6710f470-f7ee-4c4e-b9a5-157dbfd3f909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CheckCorrectInput">
+      <UniqueIdentifier>{ee3ba0ca-2532-49c9-84d7-0551a3d941e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProfileInfo">
+      <UniqueIdentifier>{379332fa-1d75-442b-b28a-e46c74e95ede}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CheckCorrInput.cpp">
-      <Filter>CheckInfo</Filter>
-    </ClCompile>
-    <ClCompile Include="ContactClientINFO.cpp">
-      <Filter>CheckInfo\User</Filter>
-    </ClCompile>
-    <ClCompile Include="CreateUser.cpp">
-      <Filter>CheckInfo\User</Filter>
-    </ClCompile>
-    <ClCompile Include="ProfileClientINFO.cpp">
-      <Filter>CheckInfo\User</Filter>
-    </ClCompile>
     <ClCompile Include="Authorization.cpp">
       <Filter>Auth</Filter>
     </ClCompile>
+    <ClCompile Include="CheckCorrectInput.cpp">
+      <Filter>CheckCorrectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfileClientINFO.cpp">
+      <Filter>ProfileInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfileClientList.cpp">
+      <Filter>ProfileInfo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CheckCorrInput.h">
-      <Filter>CheckInfo</Filter>
-    </ClInclude>
-    <ClInclude Include="ContactClientINFO.h">
-      <Filter>CheckInfo\User</Filter>
-    </ClInclude>
-    <ClInclude Include="CreateUser.h">
-      <Filter>CheckInfo\User</Filter>
-    </ClInclude>
-    <ClInclude Include="ProfileClientINFO.h">
-      <Filter>CheckInfo\User</Filter>
-    </ClInclude>
     <ClInclude Include="Authorization.h">
       <Filter>Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckCorrectInput.h">
+      <Filter>CheckCorrectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileClientINFO.h">
+      <Filter>ProfileInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfileClientList.h">
+      <Filter>ProfileInfo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

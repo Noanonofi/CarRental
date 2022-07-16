@@ -129,18 +129,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Authorization.cpp" />
-    <ClCompile Include="CheckCorrInput.cpp" />
-    <ClCompile Include="ContactClientINFO.cpp" />
-    <ClCompile Include="CreateUser.cpp" />
+    <ClCompile Include="CheckCorrectInput.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ProfileClientINFO.cpp" />
+    <ClCompile Include="ProfileClientList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Authorization.h" />
-    <ClInclude Include="CheckCorrInput.h" />
-    <ClInclude Include="ContactClientINFO.h" />
-    <ClInclude Include="CreateUser.h" />
+    <ClInclude Include="CheckCorrectInput.h" />
     <ClInclude Include="ProfileClientINFO.h" />
+    <ClInclude Include="ProfileClientList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

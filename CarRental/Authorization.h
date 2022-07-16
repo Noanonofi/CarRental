@@ -1,14 +1,15 @@
 #pragma once
-#include "ContactClientINFO.h"
-#include "ProfileClientINFO.h"
-#include "CreateUser.h"
+#include <iostream>
+#include <string>
 #include <Windows.h>
-#include "CheckCorrInput.h"
+#include "ProfileClientList.h"
+#include "ProfileClientINFO.h"
+#include "CheckCorrectInput.h"
 
 class Authorization
 {
 public:
-	Authorization() {};
+	Authorization();
 	
 	void RegistrartionSystem();
 	void AuthorizationSystem();
@@ -16,7 +17,10 @@ public:
 private:
 	std::string login;
 	std::string password;
-	CreateUser createUser;
-	CheckCorrInput checkCorrInput;
+	std::string email;
+private:
+	ProfileClientList list;
+	ProfileClientINFO profileINFO;
+	CheckCorrectInput checkCorrectInput;
 };
 

@@ -1,31 +1,43 @@
 #include "ProfileClientINFO.h"
 
-void ProfileClientINFO::setLoginClient(const std::string& login)
+ProfileClientINFO::ProfileClientINFO(const std::string& loginClient, const std::string& passwordClient, const std::string& emailClient)
+	:loginCLient(loginClient),
+	passwordClient(passwordClient),
+	emailClient(emailClient)
+{}
+
+void ProfileClientINFO::setLoginClient(const std::string& loginClient)
 {
-    if (!checkCorrInput.checkCorrInputLogin(login))
-        throw std::runtime_error("The name cannot be less than 5 characters long");
-    else loginClient = login;
+	if (checkCorrectInput.checkLoginClient(loginCLient)) {
+		this->loginCLient = loginClient;
+	}
 }
 
-void ProfileClientINFO::setPasswordClient(const std::string& password)
+void ProfileClientINFO::setPasswordClient(const std::string& passwordClient)
 {
-    if (!checkCorrInput.checkCorrInputPassword(password))
-        throw std::runtime_error("The name cannot be less than 5 characters long");
-    else passwordClient = password;
+	if (checkCorrectInput.checkPasswordClient(passwordClient)) {
+		this->passwordClient = passwordClient;
+	}
 }
 
-void ProfileClientINFO::setEmailClient(const std::string& email)
+void ProfileClientINFO::setEmailClient(const std::string& emailClient)
 {
-    if (!checkCorrInput.checkCorrInputEmail(email))
-        throw std::runtime_error("The name cannot be less than 5 characters long");
-    else emailClient = email;
+	if (checkCorrectInput.checkEmailClient(emailClient)) {
+		this->emailClient = emailClient;
+	}
 }
 
-ProfileClientINFO::ProfileClientINFO() {}
+void ProfileClientINFO::printLogin()
+{
+	std::cout << "Login Client: " << loginCLient << std::endl;
+}
 
-std::string ProfileClientINFO::getLoginClient() const { return loginClient; }
+void ProfileClientINFO::printPassword()
+{
+	std::cout << "Password Client: " << passwordClient << std::endl;
+}
 
-std::string ProfileClientINFO::getPasswordClient() const { return passwordClient; }
-
-std::string ProfileClientINFO::getEmailClient() const { return emailClient; }
-
+void ProfileClientINFO::printEmail()
+{
+	std::cout << "Email Client: " << emailClient << std::endl;
+}

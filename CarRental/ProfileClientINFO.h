@@ -1,27 +1,29 @@
 #pragma once
 #include <iostream>
-#include "CheckCorrInput.h"
 #include <string>
+#include "CheckCorrectInput.h"
 
 class ProfileClientINFO
 {
 public:
-    ProfileClientINFO();
-
+	ProfileClientINFO(const std::string& loginClient, const std::string& passwordClient, const std::string& emailClient);
 public:
-    void setLoginClient(const std::string& login);
-    void setPasswordClient(const std::string& password);
-    void setEmailClient(const std::string& email);
+	void setLoginClient(const std::string& loginClient);
+	void setPasswordClient(const std::string& passwordClient);
+	void setEmailClient(const std::string& emailClient);
 
-public:
-    std::string getLoginClient() const;
-    std::string getPasswordClient() const;
-    std::string getEmailClient() const;
+	void printLogin();
+	void printPassword();
+	void printEmail();
+
+	std::string getLoginClient() { return loginCLient; }
+	std::string getEmailCLient() { return emailClient; }
 
 private:
-    CheckCorrInput checkCorrInput;
-    std::string loginClient;
-    std::string passwordClient;
-    std::string emailClient;
+	std::string loginCLient;
+	std::string passwordClient;
+	std::string emailClient;
+private:
+	CheckCorrectInput checkCorrectInput;
 };
 
