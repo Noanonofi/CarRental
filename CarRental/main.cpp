@@ -1,14 +1,22 @@
 ﻿#include <iostream>
-#include "CreateUser.h"
+//#include "CreateUser.h"
+#include "Authorization.h"
+
 
 
 int main()
 {
-	nlohmann::ordered_json JSON;
-	CreateUser create("My Name", "My Surname", "My Patronymic", "My Login", "My password", "My email@mail.mail");
+	setlocale(0, "");
+	//nlohmann::ordered_json JSON;
+	//CreateUser create;
 
 	//create.Serialization(JSON);
 
 	//create.Deserialization();
+
+	Authorization auth;
+
+	auth.RegistrartionSystem();
+
 }
 

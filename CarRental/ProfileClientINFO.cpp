@@ -1,11 +1,5 @@
 #include "ProfileClientINFO.h"
 
-ProfileClientINFO::ProfileClientINFO(const std::string& loginClient_, const std::string& passwordClient_, const std::string& emailClient_)
-    :loginClient(loginClient_),
-    passwordClient(passwordClient_),
-    emailClient(emailClient_)
-{}
-
 void ProfileClientINFO::setLoginClient(const std::string& login)
 {
     if (!checkCorrInput.checkCorrInputLogin(login))
@@ -26,6 +20,8 @@ void ProfileClientINFO::setEmailClient(const std::string& email)
         throw std::runtime_error("The name cannot be less than 5 characters long");
     else emailClient = email;
 }
+
+ProfileClientINFO::ProfileClientINFO() {}
 
 std::string ProfileClientINFO::getLoginClient() const { return loginClient; }
 

@@ -1,9 +1,35 @@
 #include "CreateUser.h"
 
-CreateUser::CreateUser(const std::string& nameClient_, const std::string& surnameClient_, const std::string& patronymicClient_, const std::string& loginClient_, const std::string& passwordClient_, const std::string& emailClient_)
+CreateUser::CreateUser() {}
+
+void CreateUser::setNameClient(const std::string& name)
 {
-	contactINFO = ContactClientINFO(nameClient_, surnameClient_, patronymicClient_);
-	profileINFO = ProfileClientINFO(loginClient_, passwordClient_, emailClient_);
+	contactINFO.setNameClient(name);
+}
+
+void CreateUser::setSurnameClient(const std::string& surname)
+{
+	contactINFO.setSurnameClient(surname);
+}
+
+void CreateUser::setPatronymicClient(const std::string& patronymic)
+{
+	contactINFO.setPatronymicClient(patronymic);
+}
+
+void CreateUser::setLoginClient(const std::string& login)
+{
+	profileINFO.setLoginClient(login);
+}
+
+void CreateUser::setPasswordClient(const std::string& password)
+{
+	profileINFO.setPasswordClient(password);
+}
+
+void CreateUser::setEmailClient(const std::string& email)
+{
+	profileINFO.setEmailClient(email);
 }
 
 void CreateUser::Serialization(nlohmann::ordered_json JSON)
@@ -23,7 +49,7 @@ void CreateUser::Serialization(nlohmann::ordered_json JSON)
 	if (fileJSON.is_open()) {
 		fileJSON << JSON.dump(1, '\t', true);
 		fileJSON.flush();
-		std::cout << "Writing to the file was successful" << std::endl;
+		std::cout << "\n" << "Writing to the file was successful" << std::endl;
 	}
 	else {
 		throw std::runtime_error("File is not open");

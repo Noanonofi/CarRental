@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Authorization.cpp" />
     <ClCompile Include="CheckCorrInput.cpp" />
     <ClCompile Include="ContactClientINFO.cpp" />
     <ClCompile Include="CreateUser.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="ProfileClientINFO.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Authorization.h" />
     <ClInclude Include="CheckCorrInput.h" />
     <ClInclude Include="ContactClientINFO.h" />
     <ClInclude Include="CreateUser.h" />

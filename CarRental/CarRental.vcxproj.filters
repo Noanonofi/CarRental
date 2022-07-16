@@ -19,6 +19,9 @@
     <Filter Include="CheckInfo\User">
       <UniqueIdentifier>{4b31d404-c374-43fb-b46b-2ec85077c64f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Auth">
+      <UniqueIdentifier>{6710f470-f7ee-4c4e-b9a5-157dbfd3f909}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="ProfileClientINFO.cpp">
       <Filter>CheckInfo\User</Filter>
     </ClCompile>
+    <ClCompile Include="Authorization.cpp">
+      <Filter>Auth</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckCorrInput.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="ProfileClientINFO.h">
       <Filter>CheckInfo\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Authorization.h">
+      <Filter>Auth</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

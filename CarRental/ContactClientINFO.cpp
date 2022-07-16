@@ -1,10 +1,6 @@
 #include "ContactClientINFO.h"
 
-ContactClientINFO::ContactClientINFO(const std::string& nameClient_, const std::string& surnameClient_, const std::string& patronymicClient_)
-    :nameClient(nameClient_),
-    surnameClient(surnameClient_),
-    patronymicClient(patronymicClient_)
-{}
+ContactClientINFO::ContactClientINFO() {}
 
 void ContactClientINFO::setNameClient(const std::string& nameClient_)
 {

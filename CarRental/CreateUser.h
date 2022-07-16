@@ -8,12 +8,18 @@
 class CreateUser
 {
 public:
-	CreateUser() = delete;
+	CreateUser();
+public:
+	void setNameClient(const std::string& name);
+	void setSurnameClient(const std::string& surname);
+	void setPatronymicClient(const std::string& patronymic);
 
-	CreateUser(const std::string& nameClient_, const std::string& surnameClient_, const std::string& patronymicClient_, const std::string& loginClient_, const std::string& passwordClient_, const std::string& emailClient_);
+	void setLoginClient(const std::string& login);
+	void setPasswordClient(const std::string& password);
+	void setEmailClient(const std::string& email);
 
+public:
 	void Serialization(nlohmann::ordered_json JSON);
-
 	void Deserialization();
 private:
 	ContactClientINFO contactINFO;
