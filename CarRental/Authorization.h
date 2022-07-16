@@ -9,7 +9,7 @@
 class Authorization
 {
 public:
-	Authorization();
+	Authorization() = default;
 	
 	void RegistrartionSystem();
 	void AuthorizationSystem();

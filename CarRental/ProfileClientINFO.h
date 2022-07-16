@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "CheckCorrectInput.h"
+
 
 class ProfileClientINFO
 {
@@ -15,9 +17,12 @@ public:
 	void printLogin();
 	void printPassword();
 	void printEmail();
+	void printDisplayAllInfo();
 
 	std::string getLoginClient() { return loginCLient; }
 	std::string getEmailCLient() { return emailClient; }
+public:
+	void saveProfileCLientData();
 
 private:
 	std::string loginCLient;

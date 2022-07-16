@@ -6,6 +6,7 @@ ProfileClientINFO::ProfileClientINFO(const std::string& loginClient, const std::
 	emailClient(emailClient)
 {}
 
+
 void ProfileClientINFO::setLoginClient(const std::string& loginClient)
 {
 	if (checkCorrectInput.checkLoginClient(loginCLient)) {
@@ -40,4 +41,19 @@ void ProfileClientINFO::printPassword()
 void ProfileClientINFO::printEmail()
 {
 	std::cout << "Email Client: " << emailClient << std::endl;
+}
+
+void ProfileClientINFO::printDisplayAllInfo()
+{
+	std::cout << "Login Client: " << loginCLient;
+	std::cout << "Email Client: " << emailClient;
+	std::cout << "Password Client: " << passwordClient;
+}
+
+void ProfileClientINFO::saveProfileCLientData()
+{
+	std::ofstream profileData;
+	profileData.open("profileData.txt", std::ios::app);
+	profileData.write((char*)this, sizeof(*this));
+	profileData.close();
 }

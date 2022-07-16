@@ -22,6 +22,9 @@
     <Filter Include="ProfileInfo">
       <UniqueIdentifier>{379332fa-1d75-442b-b28a-e46c74e95ede}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Car">
+      <UniqueIdentifier>{11c8e8cb-8bef-48b8-b0d3-16bcf9ec7e3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +42,12 @@
     <ClCompile Include="ProfileClientList.cpp">
       <Filter>ProfileInfo</Filter>
     </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>Car</Filter>
+    </ClCompile>
+    <ClCompile Include="PassengerCars.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Authorization.h">
@@ -52,6 +61,12 @@
     </ClInclude>
     <ClInclude Include="ProfileClientList.h">
       <Filter>ProfileInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Car</Filter>
+    </ClInclude>
+    <ClInclude Include="PassengerCars.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

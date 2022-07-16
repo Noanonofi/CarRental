@@ -129,14 +129,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Authorization.cpp" />
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="CheckCorrectInput.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PassengerCars.cpp" />
     <ClCompile Include="ProfileClientINFO.cpp" />
     <ClCompile Include="ProfileClientList.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Authorization.h" />
+    <ClInclude Include="Car.h" />
     <ClInclude Include="CheckCorrectInput.h" />
+    <ClInclude Include="PassengerCars.h" />
     <ClInclude Include="ProfileClientINFO.h" />
     <ClInclude Include="ProfileClientList.h" />
   </ItemGroup>

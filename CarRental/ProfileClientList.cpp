@@ -3,12 +3,6 @@
 void ProfileClientList::addClient(const std::string& loginClient, const std::string& passwordClient, const std::string& emailClient)
 {
 	profileClientList.push_back(ProfileClientINFO(loginClient, passwordClient, emailClient));
-	
-	for (auto& var : profileClientList) {
-		var.printLogin();
-		var.printPassword();
-		var.printEmail();
-	}
 }
 
 bool ProfileClientList::searchLogin(const std::string& loginClient)
