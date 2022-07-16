@@ -1,35 +1,34 @@
 #include "ContactClientINFO.h"
 
 ContactClientINFO::ContactClientINFO(const std::string& nameClient_, const std::string& surnameClient_, const std::string& patronymicClient_)
-	:nameClient(nameClient_),
-	surnameClient(surnameClient_),
-	patronymicClient(patronymicClient_)
+    :nameClient(nameClient_),
+    surnameClient(surnameClient_),
+    patronymicClient(patronymicClient_)
 {}
 
 void ContactClientINFO::setNameClient(const std::string& nameClient_)
 {
-	if (checkCorrentInput.checkCorrInputName(nameClient_)) {
-		nameClient = nameClient_;
-	} else {
-		throw std::runtime_error("The name cannot be less than 5 characters long");
-	}
+    if (!checkCorrInput.checkCorrInputName(nameClient_))
+        throw std::runtime_error("The name cannot be less than 5 characters long");
+    else nameClient = nameClient_;
 }
 
 void ContactClientINFO::setSurnameClient(const std::string& surnameClient_)
 {
-	if (checkCorrentInput.checkCorrInputSurname(surnameClient_)) {
-		surnameClient = surnameClient_;
-	}
-	else {
-		throw std::runtime_error("The last name cannot be less than 5 characters long");
-	}
+    if (!checkCorrInput.checkCorrInputSurname(surnameClient_))
+        throw std::runtime_error("The last name cannot be less than 5 characters long");
+    else surnameClient = surnameClient_;
 }
 
 void ContactClientINFO::setPatronymicClient(const std::string& patronymicClient_)
 {
-	if (checkCorrentInput.checkCorrInputPatronymic(patronymicClient_)) {
-		patronymicClient = patronymicClient_;
-	} else {
-		throw std::runtime_error("The patronymic cannot be less than 5 characters long");
-	}
+    if (!checkCorrInput.checkCorrInputPatronymic(patronymicClient_))
+        throw std::runtime_error("The patronymic cannot be less than 5 characters long");
+    else patronymicClient = patronymicClient_;
 }
+
+std::string ContactClientINFO::getNameClient() const { return nameClient; }
+
+std::string ContactClientINFO::getSurnameClient() const { return surnameClient; }
+
+std::string ContactClientINFO::getPatronymicClient() const { return patronymicClient; }

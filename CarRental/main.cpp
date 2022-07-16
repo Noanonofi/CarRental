@@ -1,20 +1,14 @@
 ﻿#include <iostream>
-//#include "CreateUser.h"
-#include "ContactClientINFO.h"
+#include "CreateUser.h"
+
 
 int main()
 {
-	//CreateUser create("Vladislav", "Vinogradov", "Yurevich", "Anonofi", "WrongPassword", "anonofi@gmail.com");
-	ContactClientINFO contact("My Name", "My Surname", "My Patronymic");
+	nlohmann::ordered_json JSON;
+	CreateUser create("My Name", "My Surname", "My Patronymic", "My Login", "My password", "My email@mail.mail");
 
-	std::string name = contact.getNameClient();
-	std::string surname = contact.getSurnameClient();
-	std::string patronymic = contact.getPatronymicClient();
+	//create.Serialization(JSON);
 
-
-	std::cout
-		<< "Name: " << name << std::endl
-		<< "Surname: " << surname << std::endl
-		<< "Patronymic: " << patronymic << std::endl;
+	//create.Deserialization();
 }
 

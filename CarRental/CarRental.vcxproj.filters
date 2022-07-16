@@ -47,9 +47,6 @@
     <ClInclude Include="CreateUser.h">
       <Filter>CheckInfo\User</Filter>
     </ClInclude>
-    <ClInclude Include="InformationUser.h">
-      <Filter>CheckInfo\User</Filter>
-    </ClInclude>
     <ClInclude Include="ProfileClientINFO.h">
       <Filter>CheckInfo\User</Filter>
     </ClInclude>

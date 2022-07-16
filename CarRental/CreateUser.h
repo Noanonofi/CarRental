@@ -3,17 +3,21 @@
 #include <nlohmann/json.hpp>
 #include "ContactClientINFO.h"
 #include "ProfileClientINFO.h"
-#include "InformationUser.h"
+#include <fstream>
 
 class CreateUser
 {
 public:
-	CreateUser() = default;
+	CreateUser() = delete;
 
 	CreateUser(const std::string& nameClient_, const std::string& surnameClient_, const std::string& patronymicClient_, const std::string& loginClient_, const std::string& passwordClient_, const std::string& emailClient_);
+
+	void Serialization(nlohmann::ordered_json JSON);
+
+	void Deserialization();
 private:
 	ContactClientINFO contactINFO;
 	ProfileClientINFO profileINFO;
-	InformationUser inrormationUser;
+	std::fstream fileJSON{};
 };
 
