@@ -11,7 +11,7 @@ class Authorization
 public:
 	Authorization();
 	
-	void RegistrartionSystem();
+	bool RegistrartionSystem();
 	void AuthorizationSystem();
 
 private:

@@ -2,7 +2,7 @@
 
 Authorization::Authorization() {}
 
-void Authorization::RegistrartionSystem()
+bool Authorization::RegistrartionSystem()
 {
 	std::cout << "======================================" << std::endl;
 	std::cout << "\tCar Rental System" << std::endl;
@@ -15,7 +15,7 @@ void Authorization::RegistrartionSystem()
 	/*
 	* Checking for login input until it is entered correctly
 	*/
-
+	bool isCorrect = false;
 	do {
 		std::cout << "Enter your username: ";
 		std::cin >> login;
@@ -23,9 +23,13 @@ void Authorization::RegistrartionSystem()
 		Sleep(500);
 		if (list.searchLogin(login)) {
 			std::cout << "Login is correct" << std::endl << std::endl;
+			isCorrect = false;
 		}
-		else { std::cout << "Login is uncorrect, maybe login lenght < 5 symbol" << std::endl << std::endl; }
-	} while (!list.searchLogin(login));
+		else { 
+			std::cout << "Login is uncorrect, maybe login lenght < 5 symbol" << std::endl << std::endl;
+			isCorrect = true;
+		}
+	} while (isCorrect);
 
 	//==============================================================================
 
@@ -42,9 +46,13 @@ void Authorization::RegistrartionSystem()
 		if (list.searchEmail(email)) {
 			std::cout << "Email is correct" << std::endl << std::endl;
 			profileINFO.setLoginClient(email);
+			isCorrect = false;
 		}
-		else { std::cout << "Email is uncorrect, maybe email lenght < 5 symbol" << std::endl; exit(1); }
-	} while (!list.searchEmail(email));
+		else { 
+			std::cout << "Email is uncorrect, maybe email lenght < 5 symbol" << std::endl; exit(1);
+			isCorrect = true;
+		}
+	} while (isCorrect);
 
 	//==============================================================================
 

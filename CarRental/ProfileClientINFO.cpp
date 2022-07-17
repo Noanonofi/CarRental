@@ -9,24 +9,24 @@ ProfileClientINFO::ProfileClientINFO(const std::string& loginClient, const std::
 {}
 
 
-void ProfileClientINFO::setLoginClient(const std::string& loginClient)
+void ProfileClientINFO::setLoginClient(const std::string& loginClient_)
 {
-	if (checkCorrectInput.checkLoginClient(loginCLient)) {
-		this->loginCLient = loginClient;
+	if (checkCorrectInput.checkLoginClient(loginClient_)) {
+		this->loginCLient = loginClient_;
 	}
 }
 
-void ProfileClientINFO::setPasswordClient(const std::string& passwordClient)
+void ProfileClientINFO::setPasswordClient(const std::string& passwordClient_)
 {
-	if (checkCorrectInput.checkPasswordClient(passwordClient)) {
-		this->passwordClient = passwordClient;
+	if (checkCorrectInput.checkPasswordClient(passwordClient_)) {
+		passwordClient = passwordClient_;
 	}
 }
 
-void ProfileClientINFO::setEmailClient(const std::string& emailClient)
+void ProfileClientINFO::setEmailClient(const std::string& emailClient_)
 {
-	if (checkCorrectInput.checkEmailClient(emailClient)) {
-		this->emailClient = emailClient;
+	if (checkCorrectInput.checkEmailClient(emailClient_)) {
+		emailClient = emailClient_;
 	}
 }
 
@@ -50,12 +50,4 @@ void ProfileClientINFO::printDisplayAllInfo()
 	std::cout << "Login Client: " << loginCLient;
 	std::cout << "Email Client: " << emailClient;
 	std::cout << "Password Client: " << passwordClient;
-}
-
-void ProfileClientINFO::saveProfileCLientData()
-{
-	std::ofstream profileData;
-	profileData.open("profileData.txt", std::ios::app);
-	profileData.write((char*)this, sizeof(*this));
-	profileData.close();
 }
