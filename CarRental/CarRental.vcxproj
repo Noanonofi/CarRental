@@ -129,7 +129,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Authorization.cpp" />
-    <ClCompile Include="Car.cpp" />
     <ClCompile Include="CheckCorrectInput.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PassengerCars.cpp" />
