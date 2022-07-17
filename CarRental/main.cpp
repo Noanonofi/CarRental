@@ -8,8 +8,6 @@ int main()
 	Authorization auth;
 	ProfileClientList list;
 
-	list.addClient("TestLogin", "TestPassword", "test@gmail.com");
-
 	auth.RegistrartionSystem();
 	auth.RegistrartionSystem();
 	auth.RegistrartionSystem();

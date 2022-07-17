@@ -21,9 +21,9 @@ public:
 	void printDisplayAllInfo();
 
 
-	std::string getLoginClient() { return loginCLient; }
-	std::string getEmailCLient() { return emailClient; }
-	std::string getPasswordCLient() { return passwordClient; }
+	std::string getLoginClient() const { return loginCLient; }
+	std::string getEmailCLient() const { return emailClient; }
+	std::string getPasswordCLient() const { return passwordClient; }
 
 private:
 	std::string loginCLient;

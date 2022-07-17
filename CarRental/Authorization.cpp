@@ -2,7 +2,7 @@
 
 Authorization::Authorization() {}
 
-bool Authorization::RegistrartionSystem()
+void Authorization::RegistrartionSystem()
 {
 	std::cout << "======================================" << std::endl;
 	std::cout << "\tCar Rental System" << std::endl;
@@ -27,7 +27,7 @@ bool Authorization::RegistrartionSystem()
 			isCorrect = false;
 		}
 		else { 
-			std::cout << "Login is uncorrect, maybe login lenght < 5 symbol" << std::endl << std::endl;
+			std::cout << "Login is uncorrect, maybe login lenght < 5 symbol or this login is busy" << std::endl << std::endl;
 			isCorrect = true;
 		}
 	} while (isCorrect);
@@ -50,7 +50,7 @@ bool Authorization::RegistrartionSystem()
 			isCorrect = false;
 		}
 		else { 
-			std::cout << "Email is uncorrect, maybe email lenght < 5 symbol" << std::endl; exit(1);
+			std::cout << "Email is uncorrect, maybe email lenght < 5 symbol this email is busy" << std::endl;
 			isCorrect = true;
 		}
 	} while (isCorrect);

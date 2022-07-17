@@ -1,5 +1,15 @@
 #include "ProfileClientList.h"
 
+void ProfileClientList::saveData()
+{
+	std::ofstream ofstrFile;
+	ofstrFile.open(filename, std::ios::out);
+
+	for (auto& clients : profileClientList) {
+		ofstrFile.write((char*)&clients, sizeof(ProfileClientList));
+	}
+}
+
 void ProfileClientList::loadData()
 {
 	std::ifstream ifstrName(filename, std::ios::binary);
@@ -20,27 +30,6 @@ void ProfileClientList::loadData()
 	}
 }
 
-void ProfileClientList::saveData()
-{
-	std::ofstream ofstrFile;
-	ofstrFile.open(filename, std::ios::out);
-
-	for (auto& clients : profileClientList) {
-		ofstrFile.write((char*)&clients, sizeof(ProfileClientList));
-	}
-}
-
-void ProfileClientList::addClient(const std::string& loginClient, const std::string& passwordClient, const std::string& emailCLient)
-{
-	ProfileClientINFO profileINFO;
-
-	profileINFO.setLoginClient(loginClient);
-	profileINFO.setPasswordClient(passwordClient);
-	profileINFO.setEmailClient(emailCLient);
-
-	profileClientList.push_back(profileINFO);
-}
-
 void ProfileClientList::addLogin(const std::string& loginClient_)
 {
 
@@ -57,7 +46,7 @@ void ProfileClientList::addEmail(const std::string& emailClient_)
 	profileClientList.push_back(profile);
 }
 
-bool ProfileClientList::searchLogin(const std::string& loginClient)
+bool ProfileClientList::searchLogin(const std::string& loginClient) const
 {
 	for (auto& client : profileClientList) {
 		if (loginClient == client.getLoginClient()) {
@@ -67,7 +56,7 @@ bool ProfileClientList::searchLogin(const std::string& loginClient)
 	}
 }
 
-bool ProfileClientList::searchEmail(const std::string& email)
+bool ProfileClientList::searchEmail(const std::string& email) const 
 {
 	for (auto& client : profileClientList) {
 		if (email == client.getEmailCLient()) {
