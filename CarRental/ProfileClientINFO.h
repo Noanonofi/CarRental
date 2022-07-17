@@ -20,6 +20,7 @@ public:
 	void printEmail();
 	void printDisplayAllInfo();
 
+
 	std::string getLoginClient() { return loginCLient; }
 	std::string getEmailCLient() { return emailClient; }
 	std::string getPasswordCLient() { return passwordClient; }

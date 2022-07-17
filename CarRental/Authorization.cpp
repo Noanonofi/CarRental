@@ -21,8 +21,9 @@ bool Authorization::RegistrartionSystem()
 		std::cin >> login;
 		std::cout << "\nCheck...." << login << std::endl << std::endl;
 		Sleep(500);
-		if (list.searchLogin(login)) {
+		if (!list.searchLogin(login)) {
 			std::cout << "Login is correct" << std::endl << std::endl;
+			list.addLogin(login);
 			isCorrect = false;
 		}
 		else { 
@@ -43,9 +44,9 @@ bool Authorization::RegistrartionSystem()
 		std::cout << "\nCheck...." << email << std::endl << std::endl;
 		Sleep(500);
 
-		if (list.searchEmail(email)) {
+		if (!list.searchEmail(email)) {
 			std::cout << "Email is correct" << std::endl << std::endl;
-			profileINFO.setLoginClient(email);
+			list.addEmail(email);
 			isCorrect = false;
 		}
 		else { 
@@ -65,11 +66,9 @@ bool Authorization::RegistrartionSystem()
 		std::cin >> password;
 		std::cout << "\nCheck...." << password << std::endl << std::endl;
 		Sleep(500);
+		
+		profileINFO.setPasswordClient(password);
 
-		if (checkCorrectInput.checkPasswordClient(password)) {
-			std::cout << "Password is correct" << std::endl;
-		}
-		else { std::cout << "Password is uncorrect, maybe login lenght < 8 symbol" << std::endl;}
 	} while (!checkCorrectInput.checkPasswordClient(password));
 
 

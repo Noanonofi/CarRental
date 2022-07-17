@@ -41,6 +41,22 @@ void ProfileClientList::addClient(const std::string& loginClient, const std::str
 	profileClientList.push_back(profileINFO);
 }
 
+void ProfileClientList::addLogin(const std::string& loginClient_)
+{
+
+	profile.setLoginClient(loginClient_);
+
+	profileClientList.push_back(profile);
+}
+
+void ProfileClientList::addEmail(const std::string& emailClient_)
+{
+
+	profile.setLoginClient(emailClient_);
+
+	profileClientList.push_back(profile);
+}
+
 bool ProfileClientList::searchLogin(const std::string& loginClient)
 {
 	for (auto& client : profileClientList) {
