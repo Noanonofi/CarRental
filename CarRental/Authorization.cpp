@@ -23,7 +23,6 @@ void Authorization::RegistrartionSystem()
 		Sleep(500);
 		if (list.searchLogin(login)) {
 			std::cout << "Login is correct" << std::endl << std::endl;
-			profileINFO.setLoginClient(login);
 		}
 		else { std::cout << "Login is uncorrect, maybe login lenght < 5 symbol" << std::endl << std::endl; }
 	} while (!list.searchLogin(login));
