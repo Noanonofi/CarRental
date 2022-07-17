@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 #include "Authorization.h"
 #include "ProfileClientList.h"
-using std::cout;
-using std::endl;
 
 int main()
 {
@@ -13,6 +11,5 @@ int main()
 	list.addClient("Eenkloppen", "WrongPasswo", "anonofi@gmail.com");
 
 	auth.RegistrartionSystem();
-
 }
 
