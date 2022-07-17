@@ -9,7 +9,6 @@ int main()
 	setlocale(0, "");
 	Authorization auth;
 	auth.RegistrartionSystem();
-	auth.RegistrartionSystem();
 	auth.AuthorizationSystem();
 }
 
