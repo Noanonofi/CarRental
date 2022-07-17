@@ -1,5 +1,7 @@
 #include "ProfileClientINFO.h"
 
+ProfileClientINFO::ProfileClientINFO() {}
+
 ProfileClientINFO::ProfileClientINFO(const std::string& loginClient, const std::string& passwordClient, const std::string& emailClient)
 	:loginCLient(loginClient),
 	passwordClient(passwordClient),

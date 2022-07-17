@@ -3,24 +3,12 @@
 #include <vector>
 #include "Car.h"
 
-//enum class PassengerCarsLIST {
-//	BMW = 1,
-//	Skoda = 2,
-//	Toyota = 3,
-//	KIA = 4,
-//	Renault = 5,
-//	Mazda = 6,
-//	Ford = 7
-//};
-
 class PassengerCar : public ICar
 {
 public:
 	virtual void CarBrandList() override {
 		std::cout << "Following Passenger Car are available: " << std::endl << std::endl;
-		for (auto& it : carlist) {
-			std::cout << it << std::endl;
-		}
+		// Displaying a list of available car brands
 		std::cin >> IDPassengerCars;
 		CarModelList();
 	}

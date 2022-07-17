@@ -1,5 +1,7 @@
 #include "Authorization.h"
 
+Authorization::Authorization() {}
+
 void Authorization::RegistrartionSystem()
 {
 	std::cout << "======================================" << std::endl;
@@ -17,7 +19,7 @@ void Authorization::RegistrartionSystem()
 	if (list.searchLogin(login)) {
 		std::cout << "Login is correct" << std::endl << std::endl;
 		profileINFO.setLoginClient(login);
-	} else std::cout << "Login is uncorrect, maybe login lenght < 5 symbol";
+	} else std::cout << "Login is uncorrect, maybe login lenght < 5 symbol" << std::endl;
 
 	//==============================================================================
 
@@ -29,7 +31,7 @@ void Authorization::RegistrartionSystem()
 	if (list.searchEmail(email)) {
 		std::cout << "Email is correct" << std::endl << std::endl;
 		profileINFO.setLoginClient(email);
-	} else std::cout << "Email is uncorrect, maybe email lenght < 5 symbol";
+	} else std::cout << "Email is uncorrect, maybe email lenght < 5 symbol" << std::endl;
 
 	//==============================================================================
 
@@ -40,7 +42,7 @@ void Authorization::RegistrartionSystem()
 
 	if (checkCorrectInput.checkPasswordClient(password)) {
 		std::cout << "Password is correct" << std::endl;
-	} else std::cout << "Password is uncorrect, maybe login lenght < 8 symbol";
+	} else std::cout << "Password is uncorrect, maybe login lenght < 8 symbol" << std::endl;
 }
 
 void Authorization::AuthorizationSystem()

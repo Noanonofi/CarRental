@@ -8,6 +8,7 @@
 class ProfileClientINFO
 {
 public:
+	ProfileClientINFO();
 	ProfileClientINFO(const std::string& loginClient, const std::string& passwordClient, const std::string& emailClient);
 public:
 	void setLoginClient(const std::string& loginClient);
@@ -19,8 +20,8 @@ public:
 	void printEmail();
 	void printDisplayAllInfo();
 
-	std::string getLoginClient() { return loginCLient; }
-	std::string getEmailCLient() { return emailClient; }
+	std::string& getLoginClient() { return loginCLient; }
+	std::string& getEmailCLient() { return emailClient; }
 public:
 	void saveProfileCLientData();
 
