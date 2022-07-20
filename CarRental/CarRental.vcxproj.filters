@@ -43,7 +43,7 @@
       <Filter>ProfileInfo</Filter>
     </ClCompile>
     <ClCompile Include="PassengerCars.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Car</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,7 +63,7 @@
       <Filter>Car</Filter>
     </ClInclude>
     <ClInclude Include="PassengerCars.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Car</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

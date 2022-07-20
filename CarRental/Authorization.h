@@ -15,8 +15,7 @@ public:
 	void AuthorizationSystem();
 
 private:
-	/**
-	* Cars
+	/*
 	* @param	login		Profile login specified during registration and authorization.
 	* @param	password	Profile password specified during registration and authorization
 	* @param	email		Profile email specified during registration and authorization
@@ -25,8 +24,7 @@ private:
 	std::string password;
 	std::string email;
 private:
-	/**
-	* Cars
+	/*
 	* @param	ProfileClientList		List of all registered clients
 	* @param	ProfileClientINFO		Each user's profile information
 	* @param	CheckCorrectInput		Checking the correctness of data entry(login, password, email)

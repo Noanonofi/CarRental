@@ -4,6 +4,7 @@ class ICar
 public:
 	virtual void CarBrandList() = 0;
 	virtual void CarModelList() = 0;
+	virtual void CharacteristicsOfTheMachines() = 0;
 	virtual ~ICar(){}
 protected:
 	/**
