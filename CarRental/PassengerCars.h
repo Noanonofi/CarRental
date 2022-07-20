@@ -3,31 +3,22 @@
 #include <vector>
 #include "Car.h"
 
+/*
+* A temporary solution to the list of machines
+*/
 class PassengerCar : public ICar
 {
 public:
-	virtual void CarBrandList() override {
-		std::cout << "Following Passenger Car are available: " << std::endl << std::endl;
-		// Displaying a list of available car brands
-		std::cin >> IDPassengerCars;
-		CarModelList();
-	}
+	virtual void CarBrandList() override;
 private:
-	virtual void CarModelList() override {
-		switch (IDPassengerCars)
-		{
-		case 1:
-
-		default:
-			break;
-		}
-	}
+	virtual void CarModelList() override;
+	void CharacteristicsOfTheMachines() override;
 public:
-	void addCar(const std::string car);
+	//void addCar(const std::string car);
 private:
-	void standartListCar();
+	//void standartListCar();
 private:
-	int IDPassengerCars;
-	std::vector<std::string> carlist;
+	uint8_t IDPassengerCarsMark;
+	uint8_t IDPassengerCarsModel;
 };
 
