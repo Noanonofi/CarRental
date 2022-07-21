@@ -83,7 +83,3 @@ void PassengerCar::CarModelList()
 		break;
 	}
 }
-
-void PassengerCar::CharacteristicsOfTheMachines()
-{
-}

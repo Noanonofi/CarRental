@@ -15,4 +15,3 @@ protected:
 	int choosingCarModel;
 	int choosingCarBrand;
 };
-

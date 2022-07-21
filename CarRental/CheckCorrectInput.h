@@ -9,4 +9,3 @@ public:
 	bool checkPasswordClient(const std::string& passwordClient);
 	bool checkEmailClient(const std::string& emailClient);
 };
-

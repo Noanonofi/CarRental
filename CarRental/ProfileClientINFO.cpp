@@ -12,7 +12,7 @@ ProfileClientINFO::ProfileClientINFO(const std::string& loginClient, const std::
 void ProfileClientINFO::setLoginClient(const std::string& loginClient_)
 {
 	if (checkCorrectInput.checkLoginClient(loginClient_)) {
-		this->loginCLient = loginClient_;
+		loginCLient = loginClient_;
 	}
 }
 
@@ -30,24 +30,24 @@ void ProfileClientINFO::setEmailClient(const std::string& emailClient_)
 	}
 }
 
-void ProfileClientINFO::printLogin()
+void ProfileClientINFO::printLogin() const
 {
 	std::cout << "Login Client: " << loginCLient << std::endl;
 }
 
-void ProfileClientINFO::printPassword()
+void ProfileClientINFO::printPassword() const
 {
 	std::cout << "Password Client: " << passwordClient << std::endl;
 }
 
-void ProfileClientINFO::printEmail()
+void ProfileClientINFO::printEmail() const
 {
 	std::cout << "Email Client: " << emailClient << std::endl;
 }
 
-void ProfileClientINFO::printDisplayAllInfo()
+void ProfileClientINFO::printDisplayAllInfo() const
 {
-	std::cout << "Login Client: " << loginCLient;
-	std::cout << "Email Client: " << emailClient;
-	std::cout << "Password Client: " << passwordClient;
+	std::cout << "Login Client: " << loginCLient << std::endl;
+	std::cout << "Email Client: " << emailClient << std::endl;
+	std::cout << "Password Client: " << passwordClient << std::endl;
 }

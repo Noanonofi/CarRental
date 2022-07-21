@@ -108,5 +108,4 @@ void Authorization::AuthorizationSystem()
 	else {
 		std::cout << "Login or password is uncorrect!" << std::endl;
 	}
-
 }

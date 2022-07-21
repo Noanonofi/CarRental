@@ -20,4 +20,3 @@ private:
 	const std::string filename = "Clients.dat";
 	ProfileClientINFO profile;
 };
-
