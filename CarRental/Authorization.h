@@ -33,4 +33,3 @@ private:
 	ProfileClientINFO profileINFO;
 	CheckCorrectInput checkCorrectInput;
 };
-

@@ -21,4 +21,3 @@ private:
 	uint8_t IDPassengerCarsMark;
 	uint8_t IDPassengerCarsModel;
 };
-

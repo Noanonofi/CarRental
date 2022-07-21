@@ -15,10 +15,10 @@ public:
 	void setPasswordClient(const std::string& passwordClient_);
 	void setEmailClient(const std::string& emailClient_);
 
-	void printLogin();
-	void printPassword();
-	void printEmail();
-	void printDisplayAllInfo();
+	void printLogin() const;
+	void printPassword() const;
+	void printEmail() const;
+	void printDisplayAllInfo() const;
 
 
 	std::string getLoginClient() const { return loginCLient; }
